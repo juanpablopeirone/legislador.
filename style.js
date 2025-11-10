@@ -1,0 +1,140 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* MENÚ RESPONSIVE */
+.nav-responsive {
+  background-color: #c52a4c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-responsive ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-responsive ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.nav-responsive ul li a:hover {
+  background-color: #a0213b;
+  border-radius: 5px;
+}
+
+/* BLOQUES TIPO LANDING */
+.bloque {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.bloque::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* BOTÓN CON EFECTO 3D */
+.bloque-btn {
+  position: relative;
+  z-index: 1;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  color: white;
+  background-color: #c52a4c;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+  transform: translateY(0);
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.bloque-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background-color: #a0213b;
+}
+
+/* MODO CELULAR */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-responsive ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .bloque {
+    background-position: center center;
+    height: 90vh;
+    padding-bottom: 3rem;
+  }
+
+  .bloque-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.3rem;
+  }
+
+  /* Ajuste específico para la sección Podcast */
+  .bloque-podcast {
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 100vh !important;
+    padding-bottom: 4rem !important;
+  }
+}
