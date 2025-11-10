@@ -16,7 +16,7 @@ body {
 
 /* MENÚ RESPONSIVE */
 .nav-responsive {
-  background-color: #c52a4c;
+  background: linear-gradient(to right, #2ECC71, #1ABC9C);;
   position: sticky;
   top: 0;
   z-index: 1000;
