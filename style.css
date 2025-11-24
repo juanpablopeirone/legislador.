@@ -138,3 +138,14 @@ body {
     padding-bottom: 4rem !important;
   }
 }
+/* TÍTULO DEL APARTADO PROYECTOS CON DEGRADÉ */
+.titulo-proyectos {
+  background: linear-gradient(to right, #2ECC71, #1ABC9C); /* MISMO degradé del menú */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 50px;
+  margin: 40px 0 10px;
+  font-weight: 700;
+}
