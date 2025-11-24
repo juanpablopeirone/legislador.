@@ -150,8 +150,8 @@ body {
   font-weight: 700;
 }
 /* Contenedor de la lista de proyectos */
+
 .contenedor-proyectos {
-  padding: 0 20px;          /* separa del borde, ideal para celular */
-  max-width: 900px;         /* ancho máximo para que no quede gigante en PC */
-  margin: 0 auto;           /* centra el contenido */
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
