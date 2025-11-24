@@ -1,10 +1,10 @@
 <!-- SEPARADOR -->
-<div class="ss-separator w-100" data-ss-border="" style="height:50px !important"></div>
+<div class="ss-separator w-100" style="height:50px !important;"></div>
 
 <!-- TÍTULO -->
-<div style="color: rgb(217, 41, 88); text-align: center; font-size: 50px;">
-  <h2><strong>Proyectos</strong></h2>
-</div>
+<h2 style="color: #d92958; text-align: center; font-size: 50px; margin-bottom: 10px;">
+  <strong>Proyectos</strong>
+</h2>
 
 <!-- BUSCADOR -->
 <div style="text-align: center; margin: 20px 0;">
@@ -15,11 +15,10 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("buscador-proyectos");
-    const links = document.querySelectorAll("a.d-inline-block");
+    const links = document.querySelectorAll(".proyecto-item");
 
     input.addEventListener("input", function () {
       const filtro = input.value.toLowerCase();
-
       links.forEach(link => {
         const texto = link.textContent.toLowerCase();
         link.style.display = texto.includes(filtro) ? "block" : "none";
@@ -29,145 +28,97 @@
 </script>
 
 <!-- SEPARADOR -->
-<div class="ss-separator w-100" style="height:50px !important"></div>
+<div class="ss-separator w-100" style="height:40px !important;"></div>
 
-<h1 style="font-size: 25px;">Proyectos Presentados:</h1>
+<h1 style="font-size: 25px; margin-bottom: 20px;">Proyectos Presentados:</h1>
 
 <!-- LISTA DE PROYECTOS -->
-<a class="d-inline-block" href="https://docs.google.com/document/d/1oRNnMQeDpi4RfeHAbpvB95okhp2UqQeZ/edit?usp=sharing">1 - Creación de Unidades de Prearribo</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1L0sfrtAFwpw-d9vkRw7EmV7lx3O7Whxp/edit?usp=sharing">2 - Recupero del gasto por atención de pacientes de otras jurisdicciones</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1ph1Z5kEiO_DGTLL0g3oIVuRuPyP0R2xn/edit?usp=sharing">3 - Beneplácito Sociedad Argentina de Hipertensión Arterial</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1gQINPdZTEs8GbBzydQgzd3bhP4igL_BU/edit?usp=sharing">4 - Creación Punto Adulto Mayor</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1MUy-iEFLSBH4TnHF0axl7ndv-RENmxRg/edit?usp=sharing">5 - Declaración Libro “El Juez y el Pescador”</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/10JTluLMm6bs9qhUMODofDsQU7BPXA17e/edit?usp=sharing">6 - Delegación Policía Judicial en Río Tercero</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1xJmOlx2N-frN1ox8Mxfhd-ZUuINQ5Ja1/edit?usp=sharing">7 - Beneplácito Gustavo Fernández - Roland Garros</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/17CW7yPgkUly_-_4RE6qnG22J8Yxe0Z_C/edit?usp=sharing">8 - Solicitud reintegro del 2,5% de Ingresos Brutos</a>
-<a class="d-inline-block" href="#">9 - Redistribución del concepto de Ingresos Brutos (sin enlace)</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1tu_A4yOoDA298w7eY6JaEQFk5HDJxda4/edit?usp=sharing">10 - Redistribución IB alícuota 2,5% Salud</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1K2ooCdyCFbGnnuX1xiKlzjXdelvPJ0qc/edit?usp=sharing">11 - Beneplácito Colectivo Cultural “Mosaicos y Letras”</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1BjSGsNE4Io4-UsNN1hm6ElAi59oX3hcq/edit?usp=sharing">12 - Cirugía Torácica en Hospital Bustos</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1T-Vovdfy_DrmyetyulnogVFwVcGTRJ7h/edit?usp=sharing">13 - Modificación Ley 7625</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1lwbI3VeIio-ANyzh6BxnhFrLIo3oZy3f/edit?usp=sharing">14 - Cámaras Corporales en Fuerzas de Seguridad</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1HRpAhmW-dvd60M3J2eJdwX39NL2-JI1m/edit?usp=sharing">15 - Beneplácito Hospital Privado</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/16jJUkXv3oy0491If4mC2ouDkJB3Oumn6/edit?usp=sharing">16 - Beneplácito Dr. Enrique Orschanski</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1DUHEtIx4o7g-bZS5FqCghRhEr0XabDh9/edit?usp=sharing">17 - Reconocimiento Asociación Hilos de Esperanza</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1lwbI3VeIio-ANyzh6BxnhFrLIo3oZy3f/edit?usp=sharing">18 - Declaración 75° Aniversario IMPEN 288</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/15h50xoWnqaU6-bumM8D7giK6vVZiGeiO/edit?usp=sharing">19 - Programa Provincial de Telemedicina (PROTELECOR)</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1-646hVSIFfqkqT-r5bWDD91U69izkvuB/edit?usp=sharing">20 - Beneplácito a Jorge Giacinti</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1JCqEi2CeRi9II1wd3EkTMydtauKjeFfn/edit?usp=sharing">21 - Ley de Protección Integral frente al Uso Digital</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1gLw9qy6RdL5nsjYQoBN3Szwe3FWB0m_k/edit?usp=sharing">22 - Creación Centro Cultural Deportivo “El Patio del Deportista”</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1k_KfhHC9L_VQjZE-S4Ug7xEeqPtdEUu4/edit?usp=sharing">23 - Beneplácito cirugía fetal intrauterina</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1qhxi69JmINmLQ7l7T_9L0QWF5iFP63Cc/edit?usp=sharing">24 - Enfermedad Cardiovascular en la Mujer</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1RGx6tjuCW1-NXHKD2iSWRLfdbaa0IAuo/edit?usp=sharing">25 - Despersonalización de publicidad gubernamental</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1kVSu1WxlBM8D8hWuJAPLPYO1pbNLp4XP/edit?usp=sharing">26 - Regulación de Peritos Oficiales</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1TKK6lIVim2hgVi-8uYhE-W6XfHj4kiAw/edit?usp=sharing">27 - Fiscalía contra Narcotráfico en Río Tercero</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/18A6ihU3qR93_kZHothY7YUMiyPughRAu/edit?usp=sharing">28 - Costos Transporte Eléctrico en Córdoba</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1S-8-4jvuJ1OfZJxuzBL50mkaKzc77YK6/edit?usp=sharing">29 - Pedido de Informe: Salaries Sanitarios</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1ntBo7P_tPqHTBrkj34QwbY42ypaSEC9q/edit?usp=sharing">30 - Beneplácito IX Simposio Medicina Fetal</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1DRqFmgYlxBzPfFLiez9ikLmUeEizZFKo/edit?usp=sharing">31 - Beneplácito 150° Aniversario Los Zorros</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1MmHUsCy42sgPbnCVGzVuD7L8-rx5b0JM/edit?usp=sharing">32 - Cámaras Corporales Policía Córdoba</a>
-<a class="d-inline-block" href="https://docs.google.com/document/d/1CoP2AtMXscnUoFtgdxH2rnkeTxyWqgEr/edit?usp=sharing">34 - Beneplácito 92° Aniversario Cooperativa Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1A8e6-lsX8SCgq9K6rHxxO-otqmrKaxug/edit?usp=sharing">35 - Creación del Polo Deportivo Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/16su7IcNWiFbKwmbu4w-378ypG0ZNGsIY/edit?usp=sharing">36 - Día Provincial de Concientización de la Enfermedad Cardiovascular en la Mujer</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1JQohfp6-vb5B3RGbp12AihQuBiSKsnrc/edit?usp=sharing">37 - Protección Digital para Adultos Mayores</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1Vpv9JJ3vRy4J4S4uaRhZeFgyJcG68tfr/edit?usp=sharing">38 - Régimen de Cobro a Extranjeros No Residentes</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1Wpc1_ed9b02DGSdyDQTA2kBLsF4-oTTN/edit?usp=sharing">39 - Banco Público de Sangre de Cordón Umbilical</a>
-
-<a class="d-inline-block">40 - (salteado por numeración del usuario)</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1_oByM1PDrbsFsLU8L6AfGkaQUiibucm9/edit?usp=sharing">41 - 100 años Colegio Jesús María y José</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1kDQ3-TeX4PYZ2hvHrvn6QNc9xS45IZkQ/edit?usp=sharing">42 - Ley de Reintegro de Costos por Alcohol / Estupefacientes</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1jO4jrtFrIkTr36DkyohmbOzAKNlyUIzZ/edit?usp=sharing">43 - Reducción Tributaria al Sector Rural</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1JVLvp7_EW70PYE_8sEDw-0I3EbkykDoZ/edit?usp=sharing">44 - Regularización del Asentamiento “Los Algarrobos”</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1h6GyRWEuAiL6ZC-AyBSwBRsfQglLjuAn/edit?usp=sharing">46 - Vacunas contra el Dengue (Qdenga)</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1MtP8ZJ29dENauqd1KMFmW4zUdCQkf6TQ/edit?usp=sharing">47 - Programa de Salud Itinerante</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1Hl5VEBPycXrZ9Pan7BGJqM1yqTl3EQps/edit?usp=sharing">48 - Pedido de Informe Hospital Rawson</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1aNMXZDzgeBhAG08xElO_Dzg74JWhDhNQ/edit?usp=sharing">49 - Juzgado Federal en Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1xKxFVQA9cNOAhmT2psaaK4s_YOEnMpLz/edit?usp=sharing">50 - Suicidios y Salud Mental en Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1_pZ0EaQIeEHGW3vrgs4KI0J6W2OFngoh/edit?usp=sharing">51 - Encuentro RED Mujer 360</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1_pZ0EaQIeEHGW3vrgs4KI0J6W2OFngoh/edit?usp=sharing">52 - Pedido de Informes sobre Suicidios en Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1GiveAK1iO-TC-5-FL3CDnsg9tFH5yyo9/edit?usp=sharing">53 - Dr. Eduardo Oscar Rapetti</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1H6SRwA8sAGF9XqzaH2lud6MiKc32zJ53/edit?usp=sharing">54 - Centro de Innovación en Seguridad Provincial (CISP)</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1vRinSiUKqtTExjwwZhsPsywXiT2RfDXq/edit?usp=sharing">55 - 102 años Sociedad Italiana (Almafuerte)</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1LBlUOXUUlE0FvParB9vCOrWvKVBu6UMr/edit?usp=sharing">56 - Ley de Protección al Personal de Salud frente a Agresiones</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1ZCguYzV0o5AUkHpb_HARoiMdTrQu014Z/edit?usp=sharing">57 - Centenario Sociedad Italiana Humberto Primo</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1TQVPUDtqMGphTuBdZPdYv2Yki_S1gY8K/edit?usp=sharing">58 - Beneplácito IPEM 288 Anexo Los Potreros</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1300wqI-zxQ9Q7wI4PJoMhlU874FXvQKo/edit?usp=sharing">59 - Ley del Síndrome de Alfi – “Ley Nacho”</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1Wk3OwTzC3f8FOH57JC6xrPw8LS-MT_JH/edit?usp=sharing">60 - Comisión Investigadora por Fentanilo</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1xbeTUoPk_GO-OE4uZXHDDfahH2G2trqn/edit?usp=sharing">61 - Emergencia Formativa en Residencias Médicas</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1bUNQXcMey6qdk--duptepSMcEnGczYNW/edit?usp=sharing">62 - Reserva Natural de la Defensa La Calera</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1LqgA5Dr3nrUjeiQ4DEe2xlWH8Wt7oGbI/edit?usp=sharing">64 - IPET 98 Luis de Tejeda (sin gas)</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1-JQ1tzT-ldFPEuipO3XNUVdDaZgQLsqs/edit?usp=sharing">65 - Declaración Petroquímica</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1HKJxO2jc6AqH5e6qO58eBPkywvxPfXd0/edit?usp=sharing">66 - Emergencia laboral y productiva Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/13_akRDLl_1aBRdiuf2OqZxbBJlW6AY-D/edit?usp=sharing">67 - Mortalidad Infantil y Personal Médico por Departamento</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1eYB_SVRFHCHSyKWJfus7Qo1p0jGbyQhi/edit?usp=sharing">69 - Lectores de patentes para Caminera y peajes</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/17r8dr-iT9xzQXzQxOIAODoAeg9DHSS7J/edit?usp=sharing">70 - Oficina Central de Depósitos de Vehículos Secuestrados</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/11cNarlSkEQ1BA0ULxMYgMj1S9Ha_g56r/edit?usp=sharing">71 - Beneplácito Bomberos Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1U_5xSoDWPBsidIT6kYyq1CRqOqw_YoCb/edit?usp=sharing">72 - Régimen obligatorio de situación pasiva para policías imputados</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/11lbf9hogrBXOY8-h2_ILWDFiOq9XiirZ/edit?usp=sharing">73 - Detención de dos policías Tercero Arriba</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1DArihBg90ykn_B9WKA3gpJ1eNgqahEDR/edit?usp=sharing">74 - Programa Puente Luz (prevención del suicidio)</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1wlF5Uu2N6lGT8RnQYMRM8SUFSeJXE3eJ/edit?usp=sharing">75 - Programa PASE para adultos mayores</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1opiCK1dAQA9phvdHUqLWgMdneiGdOSk_/edit?usp=sharing">76 - Sistema Braille obligatorio en medicamentos</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1asi5WcwUbM_5z201dKPerhsRUtXiSi8W/edit?usp=sharing">77 - Gestión segura de medicamentos vencidos</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1eNYtJZ4JHNptg4iGP9NH53Bw1t5Er_UW/edit?usp=sharing">78 - Mortalidad infantil en el interior</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1M9L0hO_Qnxo9jBJDCjdZFc7p9JFnSyP0/edit?usp=sharing">79 - Fortalecimiento de la Educación Sexual Integral</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1szuhViiP6jn6QAT5_ZtqO-PQyGV_DN4A/edit?usp=sharing">81 - Modif. Art. 111 Código de Convivencia</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1T6K0COlsYTVIWzsYghRfo8Ieixbv7f2m/edit?usp=sharing">82 - Registro Provincial de Perros y Gatos en Adopción</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/15tPLto3XxvPm-12VdeJLD7wvY_CnY4Wq/edit?usp=sharing">83 - Sistema anti-drones en cárceles</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1pkEh-N2SbzokrPtSUtlp5G-KO7SR9rh3/edit?usp=sharing">84 - Homenaje 30 años explosiones Río Tercero</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/17agx_WUg0evHp6zy_nOPczpOXYjmgade/edit?usp=sharing">85 - Pedido de Informes sobre uniformes y mantenimiento policial</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1Rqeu91SQpyUgZxQps7Bilc7BSHBxll4Y/edit?usp=sharing">86 - Sede Regional Río Tercero – UPC</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1GPVdICTeUvTQGYZlNZt98r2SyP-LkvFZ/edit?usp=sharing">87 - Fallecimiento competencia de natación – Kempes</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1zs6AiJAQUEe5Zk3T0lCyIqX8BkDmaRFS/edit?usp=sharing">88 - Beneplácito “Un Mundo de Posibilidades”</a>
-
-<a class="d-inline-block" href="https://docs.google.com/document/d/1Xe57gWJcTg0uuXEi20TkmI4HGSxwJM-C/edit?usp=sharing">90 - Programa Provincial de Prevención del Burnout</a>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 18px;">
 
 
+<a class="proyecto-item" href="https://docs.google.com/document/d/1oRNnMQeDpi4RfeHAbpvB95okhp2UqQeZ/edit?usp=sharing">1 - Creación de Unidades de Prearribo</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1L0sfrtAFwpw-d9vkRw7EmV7lx3O7Whxp/edit?usp=sharing">2 - Recupero del gasto por atención de pacientes de otras jurisdicciones</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1ph1Z5kEiO_DGTLL0g3oIVuRuPyP0R2xn/edit?usp=sharing">3 - Beneplácito: Sociedad Argentina de Hipertensión Arterial</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1gQINPdZTEs8GbBzydQgzd3bhP4igL_BU/edit?usp=sharing">4 - Creación del Punto Adulto Mayor</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1MUy-iEFLSBH4TnHF0axl7ndv-RENmxRg/edit?usp=sharing">5 - Declaración del Libro “El Juez y el Pescador”</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/10JTluLMm6bs9qhUMODofDsQU7BPXA17e/edit?usp=sharing">6 - Delegación de Policía Judicial en Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1xJmOlx2N-frN1ox8Mxfhd-ZUuINQ5Ja1/edit?usp=sharing">7 - Beneplácito a Gustavo Fernández - Roland Garros</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/17CW7yPgkUly_-_4RE6qnG22J8Yxe0Z_C/edit?usp=sharing">8 - Solicitud de reintegro del 2,5% de Ingresos Brutos</a>
+<a class="proyecto-item" href="#">9 - Redistribución del concepto de Ingresos Brutos (sin enlace)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1tu_A4yOoDA298w7eY6JaEQFk5HDJxda4/edit?usp=sharing">10 - Redistribución de IB (alícuota 2,5%) para Salud</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1K2ooCdyCFbGnnuX1xiKlzjXdelvPJ0qc/edit?usp=sharing">11 - Beneplácito: Colectivo Cultural “Mosaicos y Letras”</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1BjSGsNE4Io4-UsNN1hm6ElAi59oX3hcq/edit?usp=sharing">12 - Cirugía Torácica en Hospital Bustos</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1T-Vovdfy_DrmyetyulnogVFwVcGTRJ7h/edit?usp=sharing">13 - Modificación de la Ley 7625</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1lwbI3VeIio-ANyzh6BxnhFrLIo3oZy3f/edit?usp=sharing">14 - Cámaras Corporales para Fuerzas de Seguridad</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1HRpAhmW-dvd60M3J2eJdwX39NL2-JI1m/edit?usp=sharing">15 - Beneplácito: Hospital Privado</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/16jJUkXv3oy0491If4mC2ouDkJB3Oumn6/edit?usp=sharing">16 - Beneplácito: Dr. Enrique Orschanski</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1DUHEtIx4o7g-bZS5FqCghRhEr0XabDh9/edit?usp=sharing">17 - Reconocimiento a la Asociación Hilos de Esperanza</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1lwbI3VeIio-ANyzh6BxnhFrLIo3oZy3f/edit?usp=sharing">18 - Declaración: 75° Aniversario del IMPEN 288</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/15h50xoWnqaU6-bumM8D7giK6vVZiGeiO/edit?usp=sharing">19 - Programa Provincial de Telemedicina (PROTELECOR)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1-646hVSIFfqkqT-r5bWDD91U69izkvuB/edit?usp=sharing">20 - Beneplácito: Jorge Giacinti</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1JCqEi2CeRi9II1wd3EkTMydtauKjeFfn/edit?usp=sharing">21 - Ley de Protección Integral frente al Uso Digital</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1gLw9qy6RdL5nsjYQoBN3Szwe3FWB0m_k/edit?usp=sharing">22 - Creación del Centro Cultural Deportivo “El Patio del Deportista”</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1k_KfhHC9L_VQjZE-S4Ug7xEeqPtdEUu4/edit?usp=sharing">23 - Beneplácito: Cirugía Fetal Intrauterina</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1qhxi69JmINmLQ7l7T_9L0QWF5iFP63Cc/edit?usp=sharing">24 - Enfermedad Cardiovascular en la Mujer</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1RGx6tjuCW1-NXHKD2iSWRLfdbaa0IAuo/edit?usp=sharing">25 - Despersonalización de Publicidad Gubernamental</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1kVSu1WxlBM8D8hWuJAPLPYO1pbNLp4XP/edit?usp=sharing">26 - Regulación de Peritos Oficiales</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1TKK6lIVim2hgVi-8uYhE-W6XfHj4kiAw/edit?usp=sharing">27 - Fiscalía contra el Narcotráfico en Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/18A6ihU3qR93_kZHothY7YUMiyPughRAu/edit?usp=sharing">28 - Costos del Transporte Eléctrico en Córdoba</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1S-8-4jvuJ1OfZJxuzBL50mkaKzc77YK6/edit?usp=sharing">29 - Pedido de Informe: Salarios Sanitarios</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1ntBo7P_tPqHTBrkj34QwbY42ypaSEC9q/edit?usp=sharing">30 - Beneplácito: IX Simposio de Medicina Fetal</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1DRqFmgYlxBzPfFLiez9ikLmUeEizZFKo/edit?usp=sharing">31 - Beneplácito: 150° Aniversario de Los Zorros</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1MmHUsCy42sgPbnCVGzVuD7L8-rx5b0JM/edit?usp=sharing">32 - Cámaras Corporales para la Policía de Córdoba</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1CoP2AtMXscnUoFtgdxH2rnkeTxyWqgEr/edit?usp=sharing">34 - Beneplácito: 92° Aniversario Cooperativa Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1A8e6-lsX8SCgq9K6rHxxO-otqmrKaxug/edit?usp=sharing">35 - Creación del Polo Deportivo Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/16su7IcNWiFbKwmbu4w-378ypG0ZNGsIY/edit?usp=sharing">36 - Día Provincial de Concientización sobre Enfermedad Cardiovascular en la Mujer</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1JQohfp6-vb5B3RGbp12AihQuBiSKsnrc/edit?usp=sharing">37 - Protección Digital para Adultos Mayores</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1Vpv9JJ3vRy4J4S4uaRhZeFgyJcG68tfr/edit?usp=sharing">38 - Régimen de Cobro a Extranjeros No Residentes</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1Wpc1_ed9b02DGSdyDQTA2kBLsF4-oTTN/edit?usp=sharing">39 - Banco Público de Sangre de Cordón Umbilical</a>
+<a class="proyecto-item">40 - (numeración salteada)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1_oByM1PDrbsFsLU8L6AfGkaQUiibucm9/edit?usp=sharing">41 - 100 años Colegio Jesús María y José</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1kDQ3-TeX4PYZ2hvHrvn6QNc9xS45IZkQ/edit?usp=sharing">42 - Ley de Reintegro por Costos de Alcohol / Estupefacientes</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1jO4jrtFrIkTr36DkyohmbOzAKNlyUIzZ/edit?usp=sharing">43 - Reducción Tributaria al Sector Rural</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1JVLvp7_EW70PYE_8sEDw-0I3EbkykDoZ/edit?usp=sharing">44 - Regularización del Asentamiento “Los Algarrobos”</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1h6GyRWEuAiL6ZC-AyBSwBRsfQglLjuAn/edit?usp=sharing">46 - Vacunas contra el Dengue (Qdenga)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1MtP8ZJ29dENauqd1KMFmW4zUdCQkf6TQ/edit?usp=sharing">47 - Programa de Salud Itinerante</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1Hl5VEBPycXrZ9Pan7BGJqM1yqTl3EQps/edit?usp=sharing">48 - Pedido de Informe: Hospital Rawson</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1aNMXZDzgeBhAG08xElO_Dzg74JWhDhNQ/edit?usp=sharing">49 - Juzgado Federal en Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1xKxFVQA9cNOAhmT2psaaK4s_YOEnMpLz/edit?usp=sharing">50 - Suicidios y Salud Mental en Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1_pZ0EaQIeEHGW3vrgs4KI0J6W2OFngoh/edit?usp=sharing">51 - Encuentro RED Mujer 360</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1_pZ0EaQIeEHGW3vrgs4KI0J6W2OFngoh/edit?usp=sharing">52 - Pedido de Informe sobre Suicidios en Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1GiveAK1iO-TC-5-FL3CDnsg9tFH5yyo9/edit?usp=sharing">53 - Dr. Eduardo Oscar Rapetti</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1H6SRwA8sAGF9XqzaH2lud6MiKc32zJ53/edit?usp=sharing">54 - Centro de Innovación en Seguridad Provincial (CISP)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1vRinSiUKqtTExjwwZhsPsywXiT2RfDXq/edit?usp=sharing">55 - 102 años Sociedad Italiana (Almafuerte)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1LBlUOXUUlE0FvParB9vCOrWvKVBu6UMr/edit?usp=sharing">56 - Ley de Protección al Personal de Salud frente a Agresiones</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1ZCguYzV0o5AUkHpb_HARoiMdTrQu014Z/edit?usp=sharing">57 - Centenario Sociedad Italiana Humberto Primo</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1TQVPUDtqMGphTuBdZPdYv2Yki_S1gY8K/edit?usp=sharing">58 - Beneplácito IPEM 288 Anexo Los Potreros</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1300wqI-zxQ9Q7wI4PJoMhlU874FXvQKo/edit?usp=sharing">59 - Ley del Síndrome de Alfi – “Ley Nacho”</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1Wk3OwTzC3f8FOH57JC6xrPw8LS-MT_JH/edit?usp=sharing">60 - Comisión Investigadora por Fentanilo</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1xbeTUoPk_GO-OE4uZXHDDfahH2G2trqn/edit?usp=sharing">61 - Emergencia Formativa en Residencias Médicas</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1bUNQXcMey6qdk--duptepSMcEnGczYNW/edit?usp=sharing">62 - Reserva Natural de la Defensa La Calera</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1LqgA5Dr3nrUjeiQ4DEe2xlWH8Wt7oGbI/edit?usp=sharing">64 - IPET 98 Luis de Tejeda (sin gas)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1-JQ1tzT-ldFPEuipO3XNUVdDaZgQLsqs/edit?usp=sharing">65 - Declaración Petroquímica</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1HKJxO2jc6AqH5e6qO58eBPkywvxPfXd0/edit?usp=sharing">66 - Emergencia Laboral y Productiva en Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/13_akRDLl_1aBRdiuf2OqZxbBJlW6AY-D/edit?usp=sharing">67 - Mortalidad Infantil y Personal Médico por Departamento</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1eYB_SVRFHCHSyKWJfus7Qo1p0jGbyQhi/edit?usp=sharing">69 - Lectores de Patentes para Caminera y Peajes</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/17r8dr-iT9xzQXzQxOIAODoAeg9DHSS7J/edit?usp=sharing">70 - Oficina Central de Depósitos de Vehículos Secuestrados</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/11cNarlSkEQ1BA0ULxMYgMj1S9Ha_g56r/edit?usp=sharing">71 - Beneplácito: Bomberos Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1U_5xSoDWPBsidIT6kYyq1CRqOqw_YoCb/edit?usp=sharing">72 - Régimen obligatorio de situación pasiva para policías imputados</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/11lbf9hogrBXOY8-h2_ILWDFiOq9XiirZ/edit?usp=sharing">73 - Detención de dos policías en Tercero Arriba</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1DArihBg90ykn_B9WKA3gpJ1eNgqahEDR/edit?usp=sharing">74 - Programa Puente Luz (prevención del suicidio)</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1wlF5Uu2N6lGT8RnQYMRM8SUFSeJXE3eJ/edit?usp=sharing">75 - Programa PASE para Adultos Mayores</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1opiCK1dAQA9phvdHUqLWgMdneiGdOSk_/edit?usp=sharing">76 - Sistema Braille obligatorio en medicamentos</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1asi5WcwUbM_5z201dKPerhsRUtXiSi8W/edit?usp=sharing">77 - Gestión segura de medicamentos vencidos</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1eNYtJZ4JHNptg4iGP9NH53Bw1t5Er_UW/edit?usp=sharing">78 - Mortalidad Infantil en el Interior</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1M9L0hO_Qnxo9jBJDCjdZFc7p9JFnSyP0/edit?usp=sharing">79 - Fortalecimiento de la Educación Sexual Integral</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1szuhViiP6jn6QAT5_ZtqO-PQyGV_DN4A/edit?usp=sharing">81 - Modificación del Art. 111 del Código de Convivencia</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1T6K0COlsYTVIWzsYghRfo8Ieixbv7f2m/edit?usp=sharing">82 - Registro Provincial de Perros y Gatos en Adopción</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/15tPLto3XxvPm-12VdeJLD7wvY_CnY4Wq/edit?usp=sharing">83 - Sistema Anti-Drones en Cárceles</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1pkEh-N2SbzokrPtSUtlp5G-KO7SR9rh3/edit?usp=sharing">84 - Homenaje: 30 años de las explosiones de Río Tercero</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/17agx_WUg0evHp6zy_nOPczpOXYjmgade/edit?usp=sharing">85 - Pedido de Informes sobre Uniformes y Mantenimiento Policial</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1Rqeu91SQpyUgZxQps7Bilc7BSHBxll4Y/edit?usp=sharing">86 - Sede Regional Río Tercero – UPC</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1GPVdICTeUvTQGYZlNZt98r2SyP-LkvFZ/edit?usp=sharing">87 - Fallecimiento en competencia de natación – Kempes</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1zs6AiJAQUEe5Zk3T0lCyIqX8BkDmaRFS/edit?usp=sharing">88 - Beneplácito: “Un Mundo de Posibilidades”</a>
+<a class="proyecto-item" href="https://docs.google.com/document/d/1Xe57gWJcTg0uuXEi20TkmI4HGSxwJM-C/edit?usp=sharing">90 - Programa Provincial de Prevención del Burnout</a>
+
+</div>
