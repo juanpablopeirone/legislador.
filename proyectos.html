@@ -1,36 +1,59 @@
-<!-- SEPARADOR -->
-<div class="ss-separator w-100" style="height:50px !important;"></div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyectos Legislativos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- TÍTULO -->
-<h2 class="titulo-proyectos"><strong>Proyectos</strong></h2>
+    <!-- ENLACE A TU CSS -->
+    <link rel="stylesheet" href="style.css">
 
-<!-- BUSCADOR -->
-<div style="text-align: center; margin: 20px 0;">
-  <input type="text" id="buscador-proyectos" placeholder="Buscar proyecto..."
-    style="width: 60%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 4px;">
-</div>
+    <!-- FUENTE POPPINS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const input = document.getElementById("buscador-proyectos");
-    const links = document.querySelectorAll(".proyecto-item");
+<body>
 
-    input.addEventListener("input", function () {
-      const filtro = input.value.toLowerCase();
-      links.forEach(link => {
-        const texto = link.textContent.toLowerCase();
-        link.style.display = texto.includes(filtro) ? "block" : "none";
-      });
-    });
-  });
-</script>
+<header>
+    <nav class="nav-responsive">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰ Menú</label>
 
-<!-- SEPARADOR -->
-<div class="ss-separator w-100" style="height:40px !important;"></div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="biografia.html">Biografía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-<h1 style="font-size: 25px; margin-bottom: 20px;">Proyectos Presentados:</h1>
+<main>
 
-<!-- LISTA DE PROYECTOS -->
+    <!-- SEPARADOR -->
+    <div class="ss-separator w-100" style="height:50px !important;"></div>
+
+    <!-- TÍTULO -->
+    <h2 class="titulo-proyectos"><strong>Proyectos</strong></h2>
+
+    <!-- BUSCADOR -->
+    <div style="text-align: center; margin: 20px 0;">
+        <input type="text" id="buscador-proyectos" placeholder="Buscar proyecto..."
+        style="width: 60%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+
+    <!-- SEPARADOR -->
+    <div class="ss-separator w-100" style="height:40px !important;"></div>
+
+    <h1 style="font-size: 25px; margin-bottom: 20px;">Proyectos Presentados:</h1>
+
+    <!-- LISTA DE PROYECTOS -->
+    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 18px;">
+
+        <!-- 📌📌📌 PEGAR AQUÍ TODOS TUS PROYECTOS 📌📌📌 -->
+        <!-- Ejemplo:
+        <a class="proyecto-item" href="...">1 - Nombre</a>
+        <!-- LISTA DE PROYECTOS -->
 <div style="display: flex; flex-direction: column; gap: 8px; font-size: 18px;">
 
 
@@ -120,3 +143,27 @@
 <a class="proyecto-item" href="https://docs.google.com/document/d/1Xe57gWJcTg0uuXEi20TkmI4HGSxwJM-C/edit?usp=sharing">90 - Programa Provincial de Prevención del Burnout</a>
 
 </div>
+        -->
+        <!-- NO PEGUES FUERA DE ESTE DIV -->
+
+    </div>
+
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("buscador-proyectos");
+        const links = document.querySelectorAll(".proyecto-item");
+
+        input.addEventListener("input", function () {
+            const filtro = input.value.toLowerCase();
+            links.forEach(link => {
+                const texto = link.textContent.toLowerCase();
+                link.style.display = texto.includes(filtro) ? "block" : "none";
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
