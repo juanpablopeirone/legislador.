@@ -205,3 +205,64 @@ body {
 .tiktok    { background-color: #000000 !important; }
 .twitter   { background-color: #1DA1F2 !important; }
 .facebook  { background-color: #1877F2 !important; color: #ffffff !important; }
+
+.contacto-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  min-height: 70vh;
+}
+
+.contacto-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contacto-section p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contacto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contacto-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px 25px;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contacto-card h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.contacto-card p {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.contacto-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #2ECC71, #1ABC9C);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contacto-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
