@@ -549,4 +549,24 @@ body {
     margin-right: auto;
   }
 }
+/* ✅ Centrado perfecto del slider en celular */
+@media (max-width: 768px) {
+  .redes-col.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ig-slider-real {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ig-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
