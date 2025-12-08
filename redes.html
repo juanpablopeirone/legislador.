@@ -24,23 +24,115 @@
   </header>
 
   <main>
-    <section class="redes-section">
-      <h1>Redes Sociales</h1>
-      <p>Seguí el trabajo legislativo en todas nuestras plataformas</p>
+    <section class="redes-hero">
+      <div class="redes-layout">
 
-      <div class="redes-contenedor">
-  <a href="https://www.instagram.com/juanpablopeironeok?igsh=ZmgybXpuaXJ2bm5q" target="_blank" class="red instagram">Instagram</a>
-  <a href="https://www.tiktok.com/@juan.pablo.peirone?_r=1&_t=ZM-923eJVCio8K" target="_blank" class="red tiktok">TikTok</a>
-  <a href="https://x.com/JPPEIRONEOK?s=20" target="_blank" class="red twitter">X / Twitter</a>
-  <a href="https://www.facebook.com/juan.p.peirone/?locale=es_LA" target="_blank" class="red facebook">Facebook</a>
-</div>
+        <!-- Columna izquierda -->
+        <div class="redes-col texto">
+          <h1>Redes Sociales</h1>
+          <p>
+            Seguí el trabajo legislativo, recorridas, proyectos y análisis
+            de la realidad de Córdoba en nuestras redes.
+          </p>
 
+          <div class="redes-contenedor">
+            <a href="https://www.instagram.com/juanpablopeironeok?igsh=ZmgybXpuaXJ2bm5q"
+               target="_blank" class="red instagram">
+              Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@juan.pablo.peirone?_r=1&_t=ZM-923eJVCio8K"
+               target="_blank" class="red tiktok">
+              TikTok
+            </a>
+
+            <a href="https://x.com/JPPEIRONEOK?s=20"
+               target="_blank" class="red twitter">
+              X / Twitter
+            </a>
+
+            <a href="https://www.facebook.com/juan.p.peirone/?locale=es_LA"
+               target="_blank" class="red facebook">
+              Facebook
+            </a>
+          </div>
+
+          <p class="redes-nota">
+            📌 Contenido diario, proyectos, territorio y trabajo legislativo.
+          </p>
+        </div>
+
+        <!-- Columna derecha: Slider con publicaciones reales -->
+        <div class="redes-col slider">
+          <div class="ig-slider-real">
+
+            <iframe class="ig-frame active"
+              src="https://www.instagram.com/p/DQSqDbwDl2O/embed"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true">
+            </iframe>
+
+            <iframe class="ig-frame"
+              src="https://www.instagram.com/p/DQCxe2xDk7D/embed"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true">
+            </iframe>
+
+            <iframe class="ig-frame"
+              src="https://www.instagram.com/p/DLv_6VGOupG/embed"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true">
+            </iframe>
+
+            <button class="ig-prev">&#10094;</button>
+            <button class="ig-next">&#10095;</button>
+
+          </div>
+
+          <p class="ig-hint">
+            Ver más en
+            <a href="https://www.instagram.com/juanpablopeironeok" target="_blank">
+              @juanpablopeironeok
+            </a>
+          </p>
+        </div>
+
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Juan Pablo Peirone. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Script del slider -->
+  <script>
+    (function () {
+      const frames = document.querySelectorAll('.ig-frame');
+      const prev = document.querySelector('.ig-prev');
+      const next = document.querySelector('.ig-next');
+      let current = 0;
+
+      function show(index) {
+        frames.forEach((f, i) => {
+          f.classList.toggle('active', i === index);
+        });
+      }
+
+      next.addEventListener('click', () => {
+        current = (current + 1) % frames.length;
+        show(current);
+      });
+
+      prev.addEventListener('click', () => {
+        current = (current - 1 + frames.length) % frames.length;
+        show(current);
+      });
+    })();
+  </script>
 
 </body>
 </html>
