@@ -537,4 +537,16 @@ body {
   }
 }
 
+/* 🔧 Corrección de centrado del slider en celular */
+@media (max-width: 768px) {
+  .redes-col.slider {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ig-slider-real {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
