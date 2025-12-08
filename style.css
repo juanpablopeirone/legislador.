@@ -201,3 +201,7 @@ body {
   background: #166FE5; 
 }
 
+.instagram { background-color: #E1306C !important; }
+.tiktok    { background-color: #000000 !important; }
+.twitter   { background-color: #1DA1F2 !important; }
+.facebook  { background-color: #1877F2 !important; color: #ffffff !important; }
